@@ -11,11 +11,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if game_state == 'dead':
-		get_tree().change_scene_to_file("res://death_screen.tscn")
+	game_state="play"
 	var player = get_tree().get_first_node_in_group("player")
 	if player != null:
 		if player.position.y > 700:
 			get_tree().change_scene_to_file("res://death_screen.tscn")
-
-	pass
