@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cic334dlp7q4o" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://btnfnvunvdrya" path="res://astronautenhelm-auf-weißem-hintergrund-isoliert-removebg-preview.png" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://dipb1uvdsfbfb" path="res://plain-green-color-gradient-design-square-background_7954-31565.webp" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://caq72byw2lba0" path="res://space-milky-way.webp" id="4_1bvp3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h2yge"]
 radius = 5.0990195
@@ -4264,5 +4265,7 @@ tile_map_data = PackedByteArray("AADp/xcAAgACAAAAAADp/xgAAgACAAEAAADp/xkAAgACAAI
 tile_set = SubResource("TileSet_lxpj2")
 
 [node name="SpaceMilkyWay" type="Sprite2D" parent="." unique_id=1623123940]
-position = Vector2(21474, 890.00006)
-scale = Vector2(0.23, 0.218)
+z_index = -2
+position = Vector2(21858, 959)
+scale = Vector2(2.304, 1.9459459)
+texture = ExtResource("4_1bvp3")
