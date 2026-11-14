@@ -4,9 +4,7 @@ extends Node2D
 
 var time
 
-func _ready() -> void:
-	await Timer(5.0) # using the function created
-	
+func _ready() -> void:	
 	if Global.minigames_done < 3: # if you havent completed 3 minigames yet 
 		Global.minigames_done = Global.minigames_done +1
 		get_tree().change_scene_to_file("res://scenes/minigame_" + str(Global.minigames_done) + ".tscn") # changes your scene by arranging this frankenstein path. 
