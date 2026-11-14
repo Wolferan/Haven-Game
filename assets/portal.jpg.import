@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dipb1uvdsfbfb"
-path="res://.godot/imported/plain-green-color-gradient-design-square-background_7954-31565.webp-feda0212f5cc31641e6b02dc03c1179b.ctex"
+uid="uid://cbw25x2mra81u"
+path="res://.godot/imported/portal.jpg-cd6b0509bbf717c83315d8a913152955.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://plain-green-color-gradient-design-square-background_7954-31565.webp"
-dest_files=["res://.godot/imported/plain-green-color-gradient-design-square-background_7954-31565.webp-feda0212f5cc31641e6b02dc03c1179b.ctex"]
+source_file="res://assets/portal.jpg"
+dest_files=["res://.godot/imported/portal.jpg-cd6b0509bbf717c83315d8a913152955.ctex"]
 
 [params]
 
