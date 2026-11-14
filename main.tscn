@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cbw25x2mra81u" path="res://assets/portal.jpg" id="5_7mycd"]
 [ext_resource type="Script" uid="uid://dj4t0gcxqxl5u" path="res://jump_pad_reverse.gd" id="6_4c57u"]
 [ext_resource type="Texture2D" uid="uid://hshs0akfg38b" path="res://assets/jump_pad.png" id="6_7mycd"]
+[ext_resource type="Script" uid="uid://1d4qrq3ldxux" path="res://portal_level1.gd" id="6_efxa6"]
 [ext_resource type="Script" uid="uid://dgwcb1pfevpot" path="res://jump_pad.gd" id="7_272bh"]
 [ext_resource type="Script" uid="uid://dblpv3v2tmubv" path="res://spike.gd" id="8_kek77"]
 [ext_resource type="Texture2D" uid="uid://rnerrxogql1w" path="res://assets/spike.png" id="9_4c57u"]
@@ -24,6 +25,9 @@ texture_region_size = Vector2i(512, 512)
 tile_size = Vector2i(512, 512)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_h2yge")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tnmff"]
+size = Vector2(555.00586, 584.01904)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qmtt5"]
 size = Vector2(19, 11)
@@ -62,9 +66,16 @@ tile_map_data = PackedByteArray("AAAqAAEAAQAAAAAAAAArAAEAAQAAAAAAAAArAAIAAQAAAAA
 tile_set = SubResource("TileSet_tnmff")
 
 [node name="Portal" type="Sprite2D" parent="." unique_id=428178764]
-position = Vector2(1241, 371)
+position = Vector2(1216, 358)
 scale = Vector2(0.12545304, 0.18321316)
 texture = ExtResource("5_7mycd")
+
+[node name="Area2D" type="Area2D" parent="Portal" unique_id=1063136200]
+script = ExtResource("6_efxa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D" unique_id=1776046389]
+position = Vector2(9.456055, -5.4577637)
+shape = SubResource("RectangleShape2D_tnmff")
 
 [node name="JumpPad" type="Area2D" parent="." unique_id=1596317264]
 z_index = 1
