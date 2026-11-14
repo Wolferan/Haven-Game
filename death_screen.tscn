@@ -6,31 +6,31 @@
 [node name="Node2D" type="Node2D" unique_id=663954946]
 script = ExtResource("1_ex68u")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=895613062]
+z_index = -2
+position = Vector2(577, 323)
+scale = Vector2(2.308, 1.9414414)
+texture = ExtResource("1_if853")
+
 [node name="Timer" type="RichTextLabel" parent="." unique_id=2119607592]
 anchors_preset = -1
 anchor_left = 0.38300002
 anchor_top = 1.1700001
 anchor_right = 0.38300002
 anchor_bottom = 1.1700001
-offset_left = 413.0
-offset_top = 240.0
-offset_right = 780.0
-offset_bottom = 313.0
+offset_left = 526.0
+offset_top = 217.0
+offset_right = 608.0
+offset_bottom = 290.0
 theme_override_font_sizes/normal_font_size = 42
-text = "Your Time is: 0,0"
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=895613062]
-z_index = -2
-position = Vector2(577, 322.00003)
-scale = Vector2(2.308, 1.9414414)
-texture = ExtResource("1_if853")
+text = " 0.0"
 
 [node name="Deathtext" type="RichTextLabel" parent="." unique_id=1915575369]
 clip_contents = false
-offset_left = 366.0
-offset_top = 85.0
-offset_right = 863.0
-offset_bottom = 270.0
+offset_left = 345.0
+offset_top = 48.0
+offset_right = 842.0
+offset_bottom = 233.0
 theme_override_constants/outline_size = 40
 theme_override_font_sizes/normal_font_size = 108
 text = "You Died"
