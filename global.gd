@@ -15,6 +15,7 @@ func _process(delta: float) -> void:
 		get_tree().change_scene_to_file("res://death_screen.tscn")
 	var player = get_tree().get_first_node_in_group("player")
 	if player != null:
-		print(player.position)
+		if player.position.y > 700:
+			get_tree().change_scene_to_file("res://death_screen.tscn")
 
 	pass
