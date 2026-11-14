@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://dgwcb1pfevpot" path="res://jump_pad.gd" id="7_272bh"]
 [ext_resource type="Script" uid="uid://dblpv3v2tmubv" path="res://spike.gd" id="8_kek77"]
 [ext_resource type="Texture2D" uid="uid://rnerrxogql1w" path="res://assets/spike.png" id="9_4c57u"]
+[ext_resource type="AudioStream" uid="uid://dfkm8f26u4xcs" path="res://space-ranger-moire-main-version-03-04-10814.mp3" id="12_dg77c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4s4b8"]
 size = Vector2(5, 11)
@@ -35,7 +36,7 @@ size = Vector2(17.5, 8.75)
 [sub_resource type="CircleShape2D" id="CircleShape2D_h2yge"]
 radius = 12.0
 
-[node name="Node2D" type="Node2D" unique_id=791366327]
+[node name="Node2D2" type="Node2D" unique_id=791366327]
 position = Vector2(-86, 32)
 
 [node name="SpaceMilkyWay" type="Sprite2D" parent="." unique_id=1623123940]
@@ -488,6 +489,10 @@ texture = ExtResource("9_4c57u")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="spike16" unique_id=1378152970]
 position = Vector2(10, 1)
 shape = SubResource("RectangleShape2D_4s4b8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1680756587]
+stream = ExtResource("12_dg77c")
+autoplay = true
 
 [connection signal="body_entered" from="SpaceMilkyWay/spike3" to="SpaceMilkyWay/spike3" method="_on_body_entered"]
 [connection signal="body_entered" from="JumpPad" to="JumpPad" method="_on_body_entered"]
