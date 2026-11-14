@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://djbu5akntjscb"]
+
+[ext_resource type="Script" uid="uid://bpxx13ktxkcpw" path="res://title_scene.gd" id="1_176dl"]
+[ext_resource type="Texture2D" uid="uid://c8yntx50h4tuq" path="res://starry-night-sky-deep-space-background_84443-81799.webp" id="1_wkkv4"]
+
+[node name="Title_scene" type="Node2D" unique_id=758849219]
+script = ExtResource("1_176dl")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1632138119]
+offset_left = 3.0
+offset_top = -4.0
+offset_right = 1158.0
+offset_bottom = 644.0
+texture = ExtResource("1_wkkv4")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1180087440]
+clip_contents = false
+offset_left = 215.0
+offset_top = 133.0
+offset_right = 1089.0
+offset_bottom = 317.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 108
+text = "Space Jumper"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=580194704]
+offset_left = 411.0
+offset_top = 312.0
+offset_right = 678.0
+offset_bottom = 514.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1874874545]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Start"
+icon_alignment = 1
+expand_icon = true
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1012416566]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
